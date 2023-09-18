@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.part-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+div{
+    width: 70px;
+    height: 70px;
+    background-color: #b4b4b3b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+div::before{
+    content: "";
+    display: inline-block;
+    width: 170px;
+    height: 140px;
+    background-color: white;
+    box-shadow: -1px -1px 37px -2px rgba(0,0,0,0.75);
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+div::after{
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: #a2678ac2;
+}
+
+.part-one div:nth-of-type(1):hover::after{
+    transform: rotate(40deg);
+}
+
+.part-one div:nth-of-type(2):hover::after{
+    transform: scaleY(0.5);
+}
+
+.part-one div:nth-of-type(3):hover::after{
+    transform: scaleX(0.5);
+}
+
+.part-one div:nth-of-type(4):hover::after{
+    transform: scale(3);
+}
+
+.part-one div:nth-of-type(5):hover::after{
+    transform: scaleX(2);
+}
+
+.part-one div:nth-of-type(6):hover::after{
+    transform: scaleY(2);
+}
+
+.part-one div:nth-of-type(7):hover::after{
+    transform: skewX(40deg);
+}
+
+.part-one div:nth-of-type(8):hover::after{
+    transform: skewY(40deg);
+}
+
+.part-one div:nth-of-type(9):hover::after{
+    transform: translate(25px, 25px);
+}
+
+.part-one div:nth-of-type(10):hover::after{
+    transform: translateX(30px);
+}
+
+.part-one div::after{
+    transition: 0.4s;
+}
+
+.part-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: calc(50% - 20%);
+}
+
+
+.part-two div:nth-of-type(1):hover::after{
+    transform: translateY(25px);
+}
+
+.part-two div:nth-of-type(2):hover::after{
+    transform: translate(59px, 60px) scale(1.86, 1.98) skewY(44deg);
+    transform-origin: right;
+}
+
+.part-two div:nth-of-type(3):hover::after{
+    transform: perspective(60px) rotateX(50deg); 
+}
+
+.part-two div:nth-of-type(4):hover::after{
+    transform: perspective(60px) rotateY(50deg); 
+}
+
+.part-two div::after{
+    transition: 0.4s;
+}
+
+
+.part-three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.part-three div::after{
+    transition: 0.4s;
+}
+
+.part-three div:nth-of-type(1):hover::after{
+    transform: rotate(40deg);
+    transform-origin: top right;
+}
+
+.part-three div:nth-of-type(2):hover::after{
+    transform: rotate(40deg);
+    transform-origin: bottom left;
+}
+
+.part-three div:nth-of-type(3):hover::after{
+    transform: perspective(70px) rotateX(35deg); 
+    transform-origin: bottom; 
+
+}
+.part-three div:nth-of-type(4):hover::after{
+    transform: perspective(150px) rotateX(60deg); 
+    transform-origin: top; 
+}
+
+.part-three div:nth-of-type(5):hover::after{
+    transform: perspective(150px) rotateY(50deg); 
+    transform-origin: left; 
+}
+
+.part-three div:nth-of-type(6):hover::after{
+    transform: perspective(150px) rotateY(60deg); 
+    transform-origin: right; 
+}
+
+.part-three div:nth-of-type(7):hover::after{
+    transform: scale(1.7);
+    transform-origin: 100% 0;
+}
+
+.part-three div:nth-of-type(8):hover::after{
+    transform: scale(1.7);
+    transform-origin: 0 100%;
+}
+
+.part-three div:nth-of-type(9):hover::after{
+    transform: scaleX(2);
+    transform-origin: right;
+}
+
+.part-three div:nth-of-type(10):hover::after{
+    transform: scaleX(2);
+    transform-origin: left;
+}
+
+.part-four{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: calc(50% - 20%);
+}
+
+.part-four div::after{
+    transition: 0.4s;
+}
+
+.part-four div:nth-of-type(1):hover::after{
+    transform: scaleY(2);
+    transform-origin: top;
+}
+
+.part-four div:nth-of-type(2):hover::after{
+    transform: scaleY(2);
+    transform-origin: bottom;
+}
